@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 <html>
+
+<link rel="stylesheet" href="animate.css"/> 
+<link rel="stylesheet" href="https://i.icomoon.io/public/temp/56a3d41a24/UntitledProject1/style-svg.css">
+<script defer src="https://i.icomoon.io/public/temp/56a3d41a24/UntitledProject1/svgxuse.js"></script>
 	
 <style>
 	
@@ -57,10 +61,15 @@ table {
 @import url('https://fonts.googleapis.com/css?family=Lato');
 
 
-.main { font-size: 16px; text-align: center; height: 100%; width: 100%; position: absolute;  font-family: 'Lato', sans-serif; font-weight: 200;   }
+.main { font-size: 16px; text-align: center; height: 100%; width: 100%; display: block; position: absolute;  font-family: 'Lato', sans-serif; font-weight: 200;   }
 .main h1 { font-size: 4em; font-weight: 400; text-transform: uppercase; padding: 0.5em ; font-family: 'Bitter', serif; letter-spacing: 0.1em;  }
 .main p { font-size: 1.4em; font-weight: 200;}
 .main blockquote { font-size: 1em; padding: 1em;}
+.main ul { display: block; margin: 1em auto; float: none; }
+.main ul li { display: inline-block; margin: 1em; padding: 1em; }
+.main ul li a { color: #535353; text-decoration: none; line-height: 1.5em; }
+.main ul li a:hover { color: #000; }
+
 
 .main .something-semantic {
   display: table;
@@ -74,7 +83,14 @@ table {
 }
 
 
-	
+[class^="icon-"], [class*=" icon-"] {
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}	
 
 
 </style>
@@ -83,16 +99,34 @@ table {
 <div class="main">
 	<div class="something-semantic">
 	   <div class="something-else-semantic">
-	      <h1>Evan Humphreys</h1>
-	      <p>Digital Creative &amp; front-end Developer.</p>
+	      <h1 class="wow slideInRight" data-wow-duration="2s" >Evan Humphreys</h1>
+	      <p class="wow slideInLeft" data-wow-duration="3s" data-wow-delay="1s" >Digital Creative &amp; front-end Developer.</p>
 	  
 	    
-	       <ul>
-		      <li></li>
-	      </ul>
+	       <!-- <ul>
+		      <li><a href=""><svg class="icon-linkedin"><use xlink:href="#icon-linkedin"></use></svg><br> LinkedIn</a></li>
+		      <li><a href="">Behance</a></li>
+		      <li><a href="">dribbble</a></li>
+		      <li><a href="">Instagram</a></li>
+	      </ul> -->
 	   </div>
 	</div>	
 </div>
 	
 </body>
+
+
+
+<script src="js/wow.js"></script>
+
+<script>
+   new WOW().init();
+</script>
+
+
 </html>
+
+
+
+
+
