@@ -64,7 +64,8 @@ table {
 
 
 
-.main {  box-sizing: border-box;  font-size: 16px; text-align: center; height: 100%; width: 100%; display: block; position: absolute;  font-family: 'Lato', sans-serif; font-weight: 200; padding: 0 0.25em;    }
+.main {  font-size: 16px; text-align: center; height: 100%; width: 100%; display: block; position: absolute;  font-family: 'Lato', sans-serif; font-weight: 200; padding: 0 ; margin: 0;   }
+.main .inner {  box-sizing: border-box; max-width: 100%; width: 100%; padding: 0 1em;  }
 .main h1 { font-size: 4em; line-height: 1.2em; font-weight: 400; text-transform: uppercase; padding:0 0 0.2em 0; font-family: 'Bitter', serif; letter-spacing: 0.1em;  }
 .main p { font-size: 1.4em; line-height: 1.2em; font-weight: 200;}
 .main blockquote { font-size: 1em; padding: 1em;}
@@ -111,6 +112,7 @@ table {
 <div class="main">
 	<div class="something-semantic">
 	   <div class="something-else-semantic">
+		   <div class="inner">
 	      <h1 class="wow zoomInDown" data-wow-duration="2s" >Evan Humphreys</h1>
 	      <p class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="2s" >Digital Creative &amp; front-end Developer.</p>
 	  
@@ -121,6 +123,7 @@ table {
 		      <li><a href="">dribbble</a></li>
 		      <li><a href="">Instagram</a></li>
 	      </ul> -->
+		   </div>
 	   </div>
 	</div>	
 </div>
