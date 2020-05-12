@@ -157,7 +157,7 @@ table {
 	<div class="something-semantic">
 	   <div class="something-else-semantic">
 		   <div class="inner">
-			<img class="logo" src="#" data-delayedsrc="img/myimage.png"  src="img/sig_po.gif">
+			<img class="logo"  src="img/sig_po.gif">
 	      <h1 class="wow fadeIn" data-wow-duration="2s" >Evan Humphreys</h1>
 	      <p class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="2s" >Designer &amp; <i>Front-end Developer</i></p>
 	  
@@ -205,7 +205,7 @@ window.addEventListener('load', function () {
 })
 
 
-$('img').each(function(){
+$('img.logo').each(function(){
   $(this).attr('src', $(this).data('delayedsrc'));
 });
 	
