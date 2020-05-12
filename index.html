@@ -157,7 +157,7 @@ table {
 	<div class="something-semantic">
 	   <div class="something-else-semantic">
 		   <div class="inner">
-			<img class="wow fadeIn logo" data-wow-duration="1s" data-wow-delay="2s"  src="img/sig_po.gif">
+			<img class="logo" src="#" data-delayedsrc="img/sig_po.gif"  >
 	      <h1 class="wow fadeIn" data-wow-duration="2s" >Evan Humphreys</h1>
 	      <p class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="2s" >Designer &amp; <i>Front-end Developer</i></p>
 	  
@@ -203,6 +203,11 @@ table {
 window.addEventListener('load', function () {
   new WOW().init();
 })
+
+
+$('img.logo').each(function(){
+  $(this).attr('src', $(this).data('delayedsrc'));
+});
 	
 </script>
 
